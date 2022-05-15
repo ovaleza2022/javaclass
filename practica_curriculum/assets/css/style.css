@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #001C55;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+p {
+    margin: 0;
+}
+
+ul, li {
+    padding: 0;
+    margin: 8px;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+}
+
+h3 {
+    letter-spacing: 4px;
+    position: relative;
+}
+
+h3::before {
+    content: '';
+    width: 60px;
+    height: 5px;
+    display: block;
+    background-color: #001C55;
+    position: absolute;
+    bottom: -10px;
+}
+
+article {
+    min-height: 150px;
+    margin: 8px auto;
+}
+
+.maestro{
+    display: flex;
+
+
+    width: 595px;
+    min-height: 842px;
+
+    margin: 0 auto;
+    background-color: rgb(240, 255, 248);
+    outline: #e40707  double  10px;
+}
+
+.seccion1 {
+    width: 35%;
+}
+
+.seccion2 {
+    width: 65%;
+    background-color: #FEC85D;
+}    
+
+.seccion1,
+.seccion2 {
+    padding: 25px;
+}
+
+.foto{
+    width: 150px;
+    height: auto;
+
+
+    border-radius: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;    
+}
+
+.listado_contacto {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.persona_titulo {
+    font-size: 18px;
+    text-align: center;
+}
+
+.dflex {
+    display: flex;
+}
+
+.icono {
+    margin-right: 10px;
+}
+
+.negrerio{
+    font-weight: bold;
+}

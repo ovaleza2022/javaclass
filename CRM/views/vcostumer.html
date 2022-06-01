@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/main.js"></script>        
+    <script defer src="js/vcostumer.js"></script>        
+    <link rel="stylesheet" href="css/style.css">        
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">         
+    <title>Ficha de Cliente</title>
+</head>
+<body onload="vcostumers()"">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">CRM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="costumers">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iteractions">Iteracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users">Usuarios</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <div class="master">
+        <p class="nav-link" class="elusuario" id="elusuario" href="">.</p>
+        <p class="nav-link" class="titulito" id="titulito">Ficha de Cliente</p>
+    </div>
+    <main class="container">
+        <section class="row">
+            <article class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="cliente-form">
+                            <div class="mb-3">
+                                <label for="id" class="form-label">id</label>
+                                <input type="text" class="form-control" id="id" name="id" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="direccion" name="direccion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="correo" name="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="creado" class="form-label">Fecha Creacion</label>
+                                <input type="text" class="form-control" id="creado" name="creado" readonly>
+                            </div>
+
+                            <button id="btn-salvar" type="submit" class="btn btn-success">Grabar</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

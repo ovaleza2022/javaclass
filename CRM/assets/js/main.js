@@ -2,8 +2,13 @@
 //const url = "http://localhost:3200/costumer"
 
 function elusuario (){
-return (localStorage.getItem('elusuario'));         
-}
+    return (localStorage.getItem('elusuario'));         
+    }
+
+function elcliente (){
+    return (localStorage.getItem('elcliente'));         
+    }
+    
 
 document.querySelector("#elusuario").textContent='Usuario:'+elusuario();
 

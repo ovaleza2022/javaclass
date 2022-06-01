@@ -50,8 +50,9 @@ function validarUsuario(respuesta) {
      respuesta.forEach(user => {
         localStorage.setItem('elusuario',user.name);     
         if (clave==user.password) 
-                    window.location.replace("/home")                    
-         else alert("Usuario o Password Incorectos")
+            window.location.replace("/home")
+         else
+            alert("Usuario o Password Incorectos")
     });
  }
 

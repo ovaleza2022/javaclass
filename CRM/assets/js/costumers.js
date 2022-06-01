@@ -19,28 +19,29 @@ window.addEventListener("load", event=> {
            linea4.textContent = `Creado en: ${costumer.createdAt}.`
            elemtPost.appendChild(linea4)                
 
-/*            const buttonBorrar_a = document.createElement("button")           
-           buttonBorrar_a.classList.add("btn", "btn-sm")
-           buttonBorrar_a.textContent = "Modificar"
-           buttonBorrar_a.href=`vcostumer?id=${costumer.id}`           
-           elemtPost.appendChild(buttonBorrar_a)
- */
            const link = document.createElement("a")
            link.classList.add("link-modificar")
            link.href=`vcostumer?id=${costumer.id}`           
-           const buttonBorrar = document.createElement("button")
-           buttonBorrar.classList.add("btn","btn-danger", "btn-sm")
-           buttonBorrar.textContent = "Borrar"
-           agregarEventoBorrarCliente(buttonBorrar, costumer)
+           elemtPost.appendChild(link)
+
+            const button1 = document.createElement("button")
+           button1.classList.add("btn","btn-danger", "btn-sm")
+           button1.textContent = "Borrar"
+           agregarEventoBorrarCliente(button1, costumer)
+           elemtPost.appendChild(button1)
 
            const button2 = document.createElement("button")
            button2.classList.add("btn-login")
            button2.textContent = "Agregar Iteraccion"           
-           agregarEventoIteraccionCliente(button2, costumer)
+           agregarEventoAgregarIteraccion(button2, costumer)
+           elemtPost.appendChild(button2)
 
-           elemtPost.appendChild(link)
-           elemtPost.appendChild(buttonBorrar)
-           elemtPost.appendChild(button2)           
+            const button3 = document.createElement("button")
+           button3.classList.add("btn-login")
+           button3.textContent = "Historial"
+           agregarEventoHistoricoCliente(button3, costumer)
+           elemtPost.appendChild(button3) 
+
            elementoListado.appendChild(elemtPost)
        });
    
@@ -57,7 +58,7 @@ function agregarEventoBorrarCliente(button, cliente) {
     })
 }
 
-function agregarEventoIteraccionCliente(button, cliente) {
+function agregarEventoAgregarIteraccion(button, cliente) {
     button.addEventListener("click", event=> {
         localStorage.setItem('elcliente',cliente.name);        
         if(confirm(`Desea agregar Interaccion al cliente ${cliente.name}?`)) {
@@ -65,3 +66,13 @@ function agregarEventoIteraccionCliente(button, cliente) {
         }
     })
 }
+
+function agregarEventoHistoricoCliente(button, cliente) {
+    button.addEventListener("click", event=> {
+        localStorage.setItem('elcliente',cliente.name);        
+        let params = `scrollbars=yes,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+        width=400,height=600,left=100,top=100`;
+        open("/iteractionsCostumer", "Historico_Cliente", params);
+    })
+}
+

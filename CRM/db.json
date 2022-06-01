@@ -98,6 +98,41 @@
       "costumer": "Clem Ide",
       "user": "Vonni Attride erajdkfa",
       "createdAt": "2022-06-01"
+    },
+    {
+      "id": 13,
+      "note": "se le apago el printer",
+      "costumer": "juan carcano",
+      "user": "Vonni Attride erajdkfa",
+      "createdAt": "2022-06-01"
+    },
+    {
+      "id": 14,
+      "note": "unosdadfasf",
+      "costumer": "probando",
+      "user": "Vonni Attride erajdkfa",
+      "createdAt": "2022-06-01"
+    },
+    {
+      "id": 15,
+      "note": "dos",
+      "costumer": "probando",
+      "user": "Vonni Attride erajdkfa",
+      "createdAt": "2022-06-01"
+    },
+    {
+      "id": 16,
+      "note": "afasfasdff",
+      "costumer": "Jenny Berar 1b *modificado*",
+      "user": "Vonni Attride erajdkfa",
+      "createdAt": "2022-06-01"
+    },
+    {
+      "id": 17,
+      "note": "numero 2",
+      "costumer": "Jenny Berar 1b *modificado*",
+      "user": "Vonni Attride erajdkfa",
+      "createdAt": "2022-06-01"
     }
   ],
   "user": [
@@ -121,7 +156,7 @@
     },
     {
       "id": 5,
-      "name": "usuario nuevo",
+      "name": "usuario nuevo id 5",
       "username": "user3",
       "password": "333"
     },
@@ -141,7 +176,7 @@
   "costumer": [
     {
       "id": 2,
-      "name": "Jenny Berar 1b",
+      "name": "Jenny Berar 1b *modificado*",
       "email": "jberardt1@odnoklassniki.ru",
       "address": "70 Nevada Point",
       "createdAt": "2022-06-01"
@@ -162,7 +197,7 @@
     },
     {
       "id": 6,
-      "name": "Gunner Meads",
+      "name": "Gunner Meads (modificado)",
       "email": "gmeads5@github.com",
       "address": "50331 Duke Way",
       "createdAt": "2021-07-10"
@@ -7205,6 +7240,13 @@
       "name": "juan de los palotes",
       "email": "",
       "address": "",
+      "createdAt": "2022-06-01"
+    },
+    {
+      "id": 1013,
+      "name": "juan carcano",
+      "email": "jcarcano@m.com",
+      "address": "adfsd",
       "createdAt": "2022-06-01"
     }
   ]

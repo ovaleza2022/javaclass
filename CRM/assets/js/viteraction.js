@@ -16,8 +16,8 @@ window.addEventListener("load", event=> {
     }    
     else
     {
-        iteractionForm.elements["cliente"].value = localStorage.getItem('elcliente')
-        iteractionForm.elements["usuario"].value = localStorage.getItem('elusuario')
+        iteractionForm.elements["cliente"].value = elcliente() //localStorage.getItem('elcliente')
+        iteractionForm.elements["usuario"].value = elusuario() //localStorage.getItem('elusuario')
         iteractionForm.elements["creado"].value = new Date().toISOString().split('T')[0]        
     }
     iteractionForm.elements["nota"].focus();    

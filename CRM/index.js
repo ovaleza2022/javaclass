@@ -22,6 +22,10 @@ app.get('/users', function(req, res) {
 app.get('/iteractions', function(req, res) {
     res.sendFile(__dirname + "/views/iteractions.html")
 })
+app.get('/iteractionsCostumer', function(req, res) {
+    res.sendFile(__dirname + "/views/iteractionsCostumer.html")
+})
+
 
 // maestros
 app.get('/vcostumer', function(req, res) {

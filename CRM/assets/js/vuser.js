@@ -29,9 +29,9 @@ function salvarUser(event) {
     if (!usuario.id==0){    
     callAPI(`${url}/${usuario.id}`, "PUT", usuario)
     .then( () => {
-        if (confirm(`Desea volver al listado de usuarios?`)) {
+        //if (confirm(`Desea volver al listado de usuarios?`)) {
             window.location.replace("/users");                                
-        }
+        //}
     })}
     else
     {

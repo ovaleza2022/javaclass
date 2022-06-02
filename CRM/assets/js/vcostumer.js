@@ -32,9 +32,9 @@ function salvarCliente(event) {
     if (!cliente.id==0){
     callAPI(`${url}/${cliente.id}`, "PUT", cliente)
     .then( () => {
-        if (confirm(`Desea volver al listado de clientes?`)) {
+        //if (confirm(`Desea volver al listado de clientes?`)) {
             window.location.replace("/costumers");                                
-        }
+        //}
     })}
     else{
         callAPI(`${url}/${cliente.id}`, "POST", cliente)

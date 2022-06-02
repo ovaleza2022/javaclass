@@ -2,15 +2,18 @@
 //const url = "http://localhost:3200/costumer"
 
 function elusuario (){
-    return (localStorage.getItem('elusuario'));         
+    return JSON.parse(localStorage.getItem("elusuario"))
+
+    //return (localStorage.getItem('elusuario').name);         
     }
 
 function elcliente (){
-    return (localStorage.getItem('elcliente'));         
+    return JSON.parse(localStorage.getItem("elcliente"))    
+    //return (localStorage.getItem('elcliente'));         
     }
     
 
-document.querySelector("#elusuario").textContent='Usuario:'+elusuario();
+document.querySelector("#elusuario").textContent='Usuario:'+elusuario().name;
 
 
 function getParam(param) {

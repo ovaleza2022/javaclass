@@ -48,7 +48,8 @@ async function loginApp(event) {
 
 function validarUsuario(respuesta) {
      respuesta.forEach(user => {
-        localStorage.setItem('elusuario',user.name);     
+        localStorage.setItem("elusuario", JSON.stringify(user))         
+//        localStorage.setItem('elusuario',user);     
         if (clave==user.password) 
             window.location.replace("/home")
          else

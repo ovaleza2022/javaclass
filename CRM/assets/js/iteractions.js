@@ -10,10 +10,10 @@ window.addEventListener("load", event=> {
             linea1.textContent = `Id: ${iteraction.id}`
             elemtPost.appendChild(linea1)        
             const linea3 = document.createElement("div")
-            linea3.textContent = `Cliente: ${iteraction.costumer}.`
+            linea3.textContent = `Cliente: ${iteraction.costumer.name}.`
             elemtPost.appendChild(linea3)        
             const linea4 = document.createElement("div")
-            linea4.textContent = `Usuario: ${iteraction.user}.`
+            linea4.textContent = `Usuario: ${iteraction.user.name}.`
             elemtPost.appendChild(linea4)        
             const linea5 = document.createElement("div")
             linea5.textContent = `Fecha Registrado: ${iteraction.createdAt}.`

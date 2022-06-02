@@ -60,7 +60,8 @@ function agregarEventoBorrarCliente(button, cliente) {
 
 function agregarEventoAgregarIteraccion(button, cliente) {
     button.addEventListener("click", event=> {
-        localStorage.setItem('elcliente',cliente.name);        
+//        localStorage.setItem('elcliente',cliente);        
+        localStorage.setItem("elcliente", JSON.stringify(cliente))         
         if(confirm(`Desea agregar Interaccion al cliente ${cliente.name}?`)) {
            window.location.replace("/viteraction");                                
         }
@@ -69,7 +70,8 @@ function agregarEventoAgregarIteraccion(button, cliente) {
 
 function agregarEventoHistoricoCliente(button, cliente) {
     button.addEventListener("click", event=> {
-        localStorage.setItem('elcliente',cliente.name);        
+//        localStorage.setItem('elcliente',cliente);        
+        localStorage.setItem("elcliente", JSON.stringify(cliente))         
         let params = `scrollbars=yes,resizable=no,status=no,location=no,toolbar=no,menubar=no,
         width=400,height=600,left=100,top=100`;
         open("/iteractionsCostumer", "Historico_Cliente", params);
